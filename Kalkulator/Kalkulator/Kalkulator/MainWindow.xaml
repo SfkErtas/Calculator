@@ -1,0 +1,91 @@
+﻿<Window x:Class="Kalkulator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kalkulator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TabControl HorizontalAlignment="Left" Height="420" VerticalAlignment="Top" Width="794" Margin="0,0,-0.4,0" Grid.ColumnSpan="2">
+            <TabItem x:Name="kayitTab" Header="Register" Margin="0,0,-3.6,-2.2">
+                <Grid Background="#FF8792E4" RenderTransformOrigin="0.504,0.502">
+                    <Grid.ColumnDefinitions>
+
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Enter your username:" HorizontalAlignment="Left" Margin="10,45,0,0" VerticalAlignment="Top" Height="26" Width="139" FontFamily="Monotype Corsiva" FontSize="16"/>
+                    <Label Content="Enter your password:" HorizontalAlignment="Left" Margin="10,73,0,0" VerticalAlignment="Top" Height="26" Width="139" FontFamily="Monotype Corsiva" FontSize="16"/>
+                    <Label Content="If you don't have an account register here:" HorizontalAlignment="Left" Margin="38,10,0,0" VerticalAlignment="Top" Width="282" Height="35" FontFamily="Impact" FontSize="16"/>
+                    <TextBox Name="regUNtext" HorizontalAlignment="Left" Height="24" Margin="214,47,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <PasswordBox Name="regpwbox01" HorizontalAlignment="Left" Margin="214,81,0,0" VerticalAlignment="Top" Width="120" Height="18"/>
+                    <PasswordBox Name="regpwbox02" HorizontalAlignment="Left" Margin="214,112,0,0" VerticalAlignment="Top" Width="120" Height="18"/>
+                    <Label Content="Re-enter your password:" HorizontalAlignment="Left" Margin="10,104,0,0" VerticalAlignment="Top" Height="26" Width="148" FontFamily="Monotype Corsiva" FontSize="16"/>
+                    <Button Name="registerButton" Content="Register" HorizontalAlignment="Left" Margin="65,162,0,0" VerticalAlignment="Top" Width="75" Click="registerButton_Click_1" Height="19" FontFamily="Showcard Gothic" FontSize="11" IsDefault="True" Background="#FF8792E4" BorderBrush="#FF090909"/>
+                    <Image Grid.Column="4" HorizontalAlignment="Left" Height="100" Margin="144.8,161,0,0" VerticalAlignment="Top" Width="144"/>
+                    <Image HorizontalAlignment="Left" Height="100" Margin="571,81,0,0" VerticalAlignment="Top" Width="100"/>
+                    <Image Margin="404,81,46,32" Source="Image2.png" Stretch="Fill"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="hesaplayiciTab" Header="Calculator" Margin="61.6,0,-64.8,-2.2">
+                <Grid Background="#FFF7F3D9">
+                    <Button x:Name="sayi5" Content="5" HorizontalAlignment="Left" Margin="347,172,0,0" VerticalAlignment="Top" Width="40" Click="sayi5_Click" Height="37"/>
+                    <Button x:Name="sayi4" Content="4" HorizontalAlignment="Left" Margin="307,172,0,0" VerticalAlignment="Top" Width="40" Click="sayi4_Click" Height="37"/>
+                    <Button x:Name="sayi6" Content="6" HorizontalAlignment="Left" Margin="387,172,0,0" VerticalAlignment="Top" Width="40" Click="Button_Click" Height="37"/>
+                    <Button x:Name="sayi7" Content="7" HorizontalAlignment="Left" Margin="307,136,0,0" VerticalAlignment="Top" Width="40" Click="sayi7_Click" Height="37"/>
+                    <Button x:Name="sayi8" Content="8" HorizontalAlignment="Left" Margin="347,136,0,0" VerticalAlignment="Top" Width="40" RenderTransformOrigin="1.304,3.875" Click="sayi8_Click" Height="37"/>
+                    <Button x:Name="sayi3" Content="3" HorizontalAlignment="Left" Margin="387,206,0,0" VerticalAlignment="Top" Width="40" Click="sayi3_Click" Height="37"/>
+                    <Button x:Name="sayi2" Content="2" HorizontalAlignment="Left" Margin="347,206,0,0" VerticalAlignment="Top" Width="40" Click="sayi2_Click" Height="37"/>
+                    <Button x:Name="sayi1" Content="1" HorizontalAlignment="Left" Margin="307,206,0,0" VerticalAlignment="Top" Width="40" Click="sayi1_Click" Height="37"/>
+                    <Button x:Name="sayi9" Content="9" HorizontalAlignment="Left" Margin="387,136,0,0" VerticalAlignment="Top" Width="40" Click="sayi9_Click" Height="37"/>
+                    <Button x:Name="sayi0" Content="0" HorizontalAlignment="Left" Margin="307,243,0,0" VerticalAlignment="Top" Width="40" Click="sayi0_Click" Height="37"/>
+                    <Button x:Name="toplayan" Content="+" HorizontalAlignment="Left" Margin="427,243,0,0" VerticalAlignment="Top" Width="40" Click="toplayan_Click" Height="37" Background="#FFADADAD" FontSize="20"/>
+                    <Button x:Name="cikaran" Content="-" HorizontalAlignment="Left" Margin="427,172,0,0" VerticalAlignment="Top" Width="40" Click="cikaran_Click" Height="37" Background="#FFADADAD" FontSize="20"/>
+                    <Button x:Name="carpan" Content="x" HorizontalAlignment="Left" Margin="427,206,0,0" VerticalAlignment="Top" Width="40" Click="carpan_Click" Height="37" Background="#FFADADAD" FontSize="20"/>
+                    <Button x:Name="bolen" Content="/" HorizontalAlignment="Left" Margin="427,136,0,0" VerticalAlignment="Top" Width="40" Click="bolen_Click" Height="37" Background="#FFADADAD" FontSize="20"/>
+                    <Button x:Name="ilkparantez" Content="(" HorizontalAlignment="Left" Margin="307,99,0,0" VerticalAlignment="Top" Width="40" Click="ilkparantez_Click" Height="37" Background="#FFADADAD"/>
+                    <Button x:Name="ikinciparantez" Content=")" HorizontalAlignment="Left" Margin="347,99,0,0" VerticalAlignment="Top" Width="40" Click="ikinciparantez_Click" Height="37" Background="#FFADADAD"/>
+                    <Button x:Name="hepsinisilen" Content="C" HorizontalAlignment="Left" Margin="307,62,0,0" VerticalAlignment="Top" Width="120" Click="hepsinisilen_Click" Height="37" Background="#FFADADAD" FontSize="20"/>
+                    <Button x:Name="azsilen" Content="CE" HorizontalAlignment="Left" Margin="387,99,0,0" VerticalAlignment="Top" Width="40" Click="azsilen_Click" Height="37" Background="#FFADADAD" FontSize="20"/>
+                    <Button x:Name="nokta" Content="." HorizontalAlignment="Left" Margin="347,243,0,0" VerticalAlignment="Top" Width="40" Click="nokta_Click" Height="37" Background="#FFADADAD"/>
+                    <Button x:Name="virgul" Content="," HorizontalAlignment="Left" Margin="387,243,0,0" VerticalAlignment="Top" Width="40" Click="virgul_Click" Height="37" Background="#FFADADAD"/>
+                    <Button x:Name="esitlik" Content="=" HorizontalAlignment="Left" Margin="427,99,0,0" VerticalAlignment="Top" Width="40" Click="esitlik_Click" IsDefault="True" Height="37" Background="#FF6064E0" FontSize="20"/>
+                    <Button x:Name="uzay" Content="space" HorizontalAlignment="Left" Margin="427,62,0,0" VerticalAlignment="Top" Width="40" Click="uzay_Click" Height="37" Background="#FFADADAD"/>
+                    <TextBox x:Name="yazilanyer" HorizontalAlignment="Left" Height="59" Margin="531,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176"/>
+                    <ListBox x:Name="listeM" HorizontalAlignment="Left" Height="138" Margin="531,244,0,0" VerticalAlignment="Top" Width="217"/>
+                    <Label x:Name="adinburada" Content="Label" HorizontalAlignment="Left" Margin="604,52,0,0" VerticalAlignment="Top" Width="144"/>
+                    <Button x:Name="cikisyapiyorum" Content="Logout" HorizontalAlignment="Left" Margin="604,80,0,0" VerticalAlignment="Top" Width="75" Click="cikisyapiyorum_Click" IsCancel="True" Background="#FFF7F3D9" FontFamily="Showcard Gothic"/>
+                    <Label Content="Current Account:" HorizontalAlignment="Left" Margin="604,25,0,0" VerticalAlignment="Top" Width="115" FontFamily="Monotype Corsiva" FontSize="16"/>
+                    <Image HorizontalAlignment="Left" Height="100" Margin="113,226,0,0" VerticalAlignment="Top" Width="100"/>
+                    <Image Margin="0,99,486,94" Source="Image4.png" Stretch="Fill"/>
+                    <Label Content="Your Operation history:" HorizontalAlignment="Left" Margin="531,212,0,0" VerticalAlignment="Top" Width="148" FontFamily="Monotype Corsiva" FontSize="16"/>
+                </Grid>
+
+            </TabItem>
+            <TabItem x:Name="giristab" Header="Login" HorizontalAlignment="Left" Height="21" VerticalAlignment="Top" Width="54" Margin="-61,0,0,-0.2">
+                <Grid Background="#FF8792E4">
+                    <Grid.ColumnDefinitions>
+
+
+                        <ColumnDefinition Width="0*"/>
+                        <ColumnDefinition/>
+
+
+                    </Grid.ColumnDefinitions>
+                    <Label Content="If you have an account login here:" HorizontalAlignment="Left" Margin="31,4,0,0" VerticalAlignment="Top" Width="227" Height="26" FontFamily="Impact" FontSize="16" Grid.Column="1"/>
+                    <TextBox x:Name="logText" HorizontalAlignment="Left" Height="18" Margin="150,53,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="137" Grid.Column="1"/>
+                    <PasswordBox x:Name="LogpaW" HorizontalAlignment="Left" Margin="150,92,0,0" VerticalAlignment="Top" Width="137" Height="18" Grid.Column="1"/>
+                    <Label Content="Enter username:" HorizontalAlignment="Left" Margin="1,45,0,0" VerticalAlignment="Top" Height="26" Width="121" FontFamily="Monotype Corsiva" FontSize="18" Grid.Column="1"/>
+                    <Label Content="Enter password:" HorizontalAlignment="Left" Margin="1,84,0,0" VerticalAlignment="Top" Height="26" Width="119" FontSize="16" FontFamily="Monotype Corsiva" Grid.Column="1"/>
+                    <Button x:Name="loginButton" Content="Login" HorizontalAlignment="Left" Margin="6,159,0,0" VerticalAlignment="Top" Width="75" Click="loginButton_Click" Background="#FF8792E4" BorderBrush="#FF060606" Foreground="#FF090909" IsDefault="True" FontFamily="Showcard Gothic" Height="18" Grid.Column="1"/>
+                    <Image HorizontalAlignment="Left" Height="100" Margin="551,120,0,0" VerticalAlignment="Top" Width="100" Grid.Column="1"/>
+                    <Image Margin="382,81,46,32" Source="Image3.png" Stretch="Fill" Grid.Column="1"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>

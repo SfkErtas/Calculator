@@ -1,0 +1,14 @@
+C:\Users\Pc\source\repos\Kalkulator\Kalkulator\bin\Debug\Kalkulator.exe.config
+C:\Users\Pc\source\repos\Kalkulator\Kalkulator\bin\Debug\Kalkulator.exe
+C:\Users\Pc\source\repos\Kalkulator\Kalkulator\bin\Debug\Kalkulator.pdb
+C:\Users\Pc\source\repos\Kalkulator\Kalkulator\obj\Debug\Kalkulator.csprojAssemblyReference.cache
+C:\Users\Pc\source\repos\Kalkulator\Kalkulator\obj\Debug\MainWindow.g.cs
+C:\Users\Pc\source\repos\Kalkulator\Kalkulator\obj\Debug\App.g.cs
+C:\Users\Pc\source\repos\Kalkulator\Kalkulator\obj\Debug\Kalkulator_MarkupCompile.cache
+C:\Users\Pc\source\repos\Kalkulator\Kalkulator\obj\Debug\Kalkulator_MarkupCompile.lref
+C:\Users\Pc\source\repos\Kalkulator\Kalkulator\obj\Debug\MainWindow.baml
+C:\Users\Pc\source\repos\Kalkulator\Kalkulator\obj\Debug\Kalkulator.g.resources
+C:\Users\Pc\source\repos\Kalkulator\Kalkulator\obj\Debug\Kalkulator.Properties.Resources.resources
+C:\Users\Pc\source\repos\Kalkulator\Kalkulator\obj\Debug\Kalkulator.csproj.GenerateResource.cache
+C:\Users\Pc\source\repos\Kalkulator\Kalkulator\obj\Debug\Kalkulator.exe
+C:\Users\Pc\source\repos\Kalkulator\Kalkulator\obj\Debug\Kalkulator.pdb
