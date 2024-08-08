@@ -1,0 +1,1 @@
+Hello everyone. This project was my first work in the college. It it simple calculator with login system. All user recordings will saved into notepad. This work was solid first year project which educates you basic elements of coding.
